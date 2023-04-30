@@ -18,7 +18,7 @@ docker run --name python-3-6 -v ${PWD}/app:/mnt -w /mnt -p 5001:5000 -p 8080:808
 
 - docker linux/macos mount volume python version 3.11
 ```bash
-docker run --name python-3-11 -v ${PWD}/app:/mnt -w /mnt -p 5001:5000 -p 8081:8080 -id python:3.11
+docker run --name python-3-11 -v ${PWD}/app:/mnt -w /mnt -p 5002:5000 -p 8081:8080 -id python:3.11
 ```
 
 
