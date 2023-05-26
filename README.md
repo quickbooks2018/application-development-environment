@@ -66,7 +66,8 @@ xhost +local:docker
 
 - MACOS Ventura Setup
 ```macos
-docker run -it \
+docker run -id \
+    --shm-size=8192m \
     --device /dev/kvm \
     -p 50922:10022 \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
