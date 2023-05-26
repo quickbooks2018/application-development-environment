@@ -77,3 +77,14 @@ docker run -id \
     sickcodes/docker-osx:ventura
 ```   
     
+- SSH
+```bash
+Next, you will want to set up SSH to be automatically started.
+
+sudo systemsetup -setremotelogin on
+
+From system settings ---> Remote login enabled
+
+# turn on SSH after you've installed OS X in the "Sharing" settings.
+ssh user@localhost -p 50922
+```
