@@ -122,6 +122,14 @@ ssh user@localhost -p 50922
 ```bash
 sudo mdutil -i off -a
 ```
+- Reduce Motion & Transparency
+```bash
+defaults write com.apple.Accessibility DifferentiateWithoutColor -int 1
+defaults write com.apple.Accessibility ReduceMotionEnabled -int 1
+defaults write com.apple.universalaccess reduceMotion -int 1
+defaults write com.apple.universalaccess reduceTransparency -int 1
+defaults write com.apple.Accessibility ReduceMotionEnabled -int 1
+```
 
 - Install Chrome and it default browser
 
