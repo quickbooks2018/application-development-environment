@@ -184,7 +184,7 @@ Resources -> WSL Integration -> "Enable integration with my default WSL distro",
 ```bash
 wsl
 sudo apt update -y
-sudo apt -y install bridge-utils cpu-checker libvirt-clients libvirt-daemon qemu qemu-kvm cpu-checker
+sudo apt -y install bridge-utils cpu-checker libvirt-clients libvirt-daemon qemu qemu-kvm cpu-checker x11-apps
 exit
 wsl --shutdown
 wsl
