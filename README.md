@@ -77,7 +77,8 @@ sudo usermod -aG kvm "${USER}"
 
 - MACOS Ventura Setup
 ```macos
-docker --name macos run -id \
+docker  run -id \
+    --name macos \
     --shm-size=8192m \
     --device /dev/kvm \
     -p 50922:10022 \
@@ -90,7 +91,8 @@ docker --name macos run -id \
 
 - MACOS Ventura Setup without shm-size
 ```macos
-docker --name macos run -id \
+docker  run -id \
+    --name macos \
     --device /dev/kvm \
     -p 50922:10022 \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
