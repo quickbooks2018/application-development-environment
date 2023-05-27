@@ -124,3 +124,8 @@ sudo mdutil -i off -a
 ```
 
 - Install Chrome and it default browser
+
+- Disable Screen Locking
+```bash
+defaults write com.apple.loginwindow DisableScreenLock -bool true
+```
