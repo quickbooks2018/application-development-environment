@@ -121,3 +121,5 @@ ssh user@localhost -p 50922
 ```bash
 sudo mdutil -i off -a
 ```
+
+- Install Chrome and it default browser
