@@ -132,6 +132,10 @@ defaults write com.apple.universalaccessAuthWarning /usr/libexec/sshd-keygen-wra
 defaults write com.apple.universalaccessAuthWarning com.apple.Messages -bool true
 defaults write com.apple.universalaccessAuthWarning com.apple.Terminal -bool true
 ```
+##### Password less SSH
+```bash
+ssh-copy-id asim@localhost -p 50922
+```
 
 - MACOS Optmizations
 - https://github.com/sickcodes/osx-optimizer
