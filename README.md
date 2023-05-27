@@ -97,6 +97,9 @@ mkdir ~/mnt/osx
 sshfs user@localhost:/ -p 50922 ~/mnt/osx
 # wait a few seconds, and ~/mnt/osx will have full rootfs mounted over ssh, and in userspace
 # automated: sshpass -p <password> sshfs user@localhost:/ -p 50922 ~/mnt/osx
+# Example
+sudo apt install sshfs
+sshfs asim@localhost:/Users/asim/Desktop -p 50922 $PWD/SHARE
 ```
     
 - SSH
