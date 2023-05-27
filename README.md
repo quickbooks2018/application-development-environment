@@ -266,3 +266,12 @@ PRESS ENTER
 
 change vnc password asim
 ```
+- command
+```bash
+docker start -a -i macos
+
+docker start: This is the command to start a Docker container.
+-a: This option attaches the STDOUT/STDERR and forwards signals.
+-i: This option makes Docker interactive by keeping STDIN open even if not attached.
+macos: This is the name of the Docker container you want to start.
+```
