@@ -88,3 +88,11 @@ From system settings ---> Remote login enabled
 # turn on SSH after you've installed OS X in the "Sharing" settings.
 ssh user@localhost -p 50922
 ```
+
+- MACOS Optmizations
+- https://github.com/sickcodes/osx-optimizer
+
+- Disable spotlight indexing on macOS to heavily speed up Virtual Instances
+```bash
+sudo mdutil -i off -a
+```
