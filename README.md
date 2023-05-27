@@ -183,7 +183,10 @@ Resources -> WSL Integration -> "Enable integration with my default WSL distro",
 - Navigate to your WSL2 Installation which is ubuntu
 ```bash
 wsl
-sudo apt install -y cpu-checker
+sudo apt update -y
+sudo apt -y install bridge-utils cpu-checker libvirt-clients libvirt-daemon qemu qemu-kvm cpu-checker
 exit
 wsl --shutdown
+wsl
+sudo kvm-ok
 ```
