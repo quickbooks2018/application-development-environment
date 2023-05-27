@@ -221,4 +221,14 @@ The operation completed successfully.
 PS C:\WINDOWS\system32> wsl --set-default-version 2
 
 wsl --set-version Ubuntu-20.04 2
+
+wsl --list --verbose
+
+
+  NAME                    STATE           VERSION
+* Ubuntu-20.04            Stopped         2----------------------------------------> WSL2
+  docker-desktop-data     Stopped         2
+  rancher-desktop         Stopped         2
+  docker-desktop          Stopped         2
+  rancher-desktop-data    Stopped         2
 ```
