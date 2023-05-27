@@ -246,6 +246,7 @@ docker run --name macos -it --device /dev/kvm -p 50922:10022 -p 5999:5999 -p 599
 ```
 
 - VNC Password
+- press ENTER
 ```bash
 change vnc password asim
 ```
