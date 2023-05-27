@@ -38,7 +38,7 @@ python3.6 app.py
 python3.11 app.py
 ```
 
-## MACOS Development environment with Ubuntu Desktop run MacOS on Linux
+## MACOS Development environment with Ubuntu Desktop run MacOS on Linux (Best performance you will get on Linux Box)
 
 ### xhost
 ```xhost
