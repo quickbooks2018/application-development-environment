@@ -242,11 +242,18 @@ wsl --shutdown
 ```
 - wsl
 ```bash
-docker run --name macos -id --device /dev/kvm -p 50922:10022 -p 5999:5999 -p 5998:5998 -v /tmp/.X11-unix:/tmp/.X11-unix -e EXTRA="-display none -vnc 0.0.0.0:99,password=on" -e "DISPLAY=${DISPLAY:-:0.0}" -e GENERATE_UNIQUE=true -e MASTER_PLIST_URL='https://raw.githubusercontent.com/sickcodes/osx-serial-generator/master/config-custom.plist' sickcodes/docker-osx:ventura
+docker run --name macos -it --device /dev/kvm -p 50922:10022 -p 5999:5999 -p 5998:5998 -v /tmp/.X11-unix:/tmp/.X11-unix -e EXTRA="-display none -vnc 0.0.0.0:99,password=on" -e "DISPLAY=${DISPLAY:-:0.0}" -e GENERATE_UNIQUE=true -e MASTER_PLIST_URL='https://raw.githubusercontent.com/sickcodes/osx-serial-generator/master/config-custom.plist' sickcodes/docker-osx:ventura
+```
+
+- VNC Password
+```bash
+change vnc password asim
 ```
 - VNC
 - https://www.realvnc.com/en/connect/download/viewer/windows/
 ```bash
 localhost:5999
+
+password: asim
 ```
 
