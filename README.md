@@ -239,3 +239,6 @@ docker run --name masos -id --device /dev/kvm -p 50922:10022 -v /tmp/.X11-unix:/
 ```
 - VNC Viewer
 - https://www.realvnc.com/en/connect/download/viewer/
+```bash
+localhost:5999
+```
