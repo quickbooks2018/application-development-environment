@@ -190,3 +190,35 @@ wsl --shutdown
 wsl
 sudo kvm-ok
 ```
+
+- powershell as administrator
+```powershell
+wsl --list --verbose
+
+
+  NAME                    STATE           VERSION
+* Ubuntu-20.04            Stopped         1
+  docker-desktop-data     Stopped         2
+  rancher-desktop         Stopped         2
+  docker-desktop          Stopped         2
+  rancher-desktop-data    Stopped         2
+  
+  
+  
+PS C:\WINDOWS\system32> dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+
+Deployment Image Servicing and Management tool
+Version: 10.0.22621.1
+
+Image Version: 10.0.22621.1778
+
+Enabling feature(s)
+[==========================100.0%==========================]
+The operation completed successfully.
+
+
+PS C:\WINDOWS\system32> wsl --set-default-version 2
+
+wsl --set-version Ubuntu-20.04 2
+```
