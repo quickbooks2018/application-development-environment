@@ -60,7 +60,7 @@ However, please note that this command reduces the security of your X server, as
 ```
 
 ```bash
-xhost +local:docker
+sudo xhost +local:docker
 ```
 - Github https://github.com/sickcodes/Docker-OSX
 
@@ -102,7 +102,8 @@ sudo apt install sshfs
 sshfs asim@localhost:/Users/asim/Desktop -p 50922 $PWD/SHARE
 ```
     
-- SSH
+- Enable SSH on MacOS
+- https://osxdaily.com/2022/07/08/turn-on-ssh-mac/
 ```bash
 Next, you will want to set up SSH to be automatically started.
 
