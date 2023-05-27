@@ -72,8 +72,8 @@ and also add yourself to the kvm and libvirt groups if needed:
 sudo usermod -aG libvirt "${USER}"
 sudo usermod -aG kvm "${USER}"
 ```
-## Github https://github.com/sickcodes/Docker-OSX
-## DockerHUb https://hub.docker.com/r/sickcodes/docker-osx
+### Github https://github.com/sickcodes/Docker-OSX
+### DockerHUb https://hub.docker.com/r/sickcodes/docker-osx
 
 - MACOS Ventura Setup
 ```macos
