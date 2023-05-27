@@ -257,4 +257,12 @@ localhost:5999
 
 password: asim
 ```
+-  After Installation reconnect with container
+-  press "q" it will exit the last shell
+```bash
+docker start -a -i `docker ps -q -l`
 
+PRESS ENTER
+
+change vnc password asim
+```
