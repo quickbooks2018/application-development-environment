@@ -262,6 +262,10 @@ password: asim
 ```bash
 docker start -a -i `docker ps -q -l`
 
+docker start -a -i: This starts a Docker container in interactive mode and attaches the STDOUT/STDERR.
+`docker ps -q -l`: This is a sub-command that is executed first. The docker ps -q -l command gets the ID of the last created Docker container. The -q flag makes the command only return the numeric ID of the container, and the -l flag stands for "latest", meaning the last container that was created.
+So, the entire command starts the most recently created Docker container in interactive mode.
+
 PRESS ENTER
 
 change vnc password asim
