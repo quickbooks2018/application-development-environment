@@ -61,7 +61,6 @@ However, please note that this command reduces the security of your X server, as
 
 ```bash
 sudo xhost +local:docker
-sudo xhost +
 ```
 
 ### Addtional Permissions
