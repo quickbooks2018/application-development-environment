@@ -114,6 +114,14 @@ From system settings ---> Remote login enabled
 # turn on SSH after you've installed OS X in the "Sharing" settings.
 ssh user@localhost -p 50922
 ```
+- Enable osascript over SSH automatically without sshd-keygen warning and full disk access
+```bash
+defaults write com.apple.universalaccessAuthWarning /System/Applications/Utilities/Terminal.app -bool true
+defaults write com.apple.universalaccessAuthWarning /usr/libexec -bool true
+defaults write com.apple.universalaccessAuthWarning /usr/libexec/sshd-keygen-wrapper -bool true
+defaults write com.apple.universalaccessAuthWarning com.apple.Messages -bool true
+defaults write com.apple.universalaccessAuthWarning com.apple.Terminal -bool true
+```
 
 - MACOS Optmizations
 - https://github.com/sickcodes/osx-optimizer
