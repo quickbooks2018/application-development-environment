@@ -40,7 +40,7 @@ python3.11 app.py
 
 ## MACOS Development environment with Ubuntu Desktop run MacOS on Linux
 
-- xhost
+### xhost
 ```xhost
 The xhost command is used to control the access to the X server (which is responsible for graphical output on Unix-like systems).
 
@@ -61,6 +61,16 @@ However, please note that this command reduces the security of your X server, as
 
 ```bash
 sudo xhost +local:docker
+```
+
+### Addtional Permissions
+- If you use sudo dockerd or dockerd is controlled by systemd/systemctl, then you must be in the Docker group. If you are not in the Docker group:
+```bash
+sudo usermod -aG docker "${USER}"
+and also add yourself to the kvm and libvirt groups if needed:
+
+sudo usermod -aG libvirt "${USER}"
+sudo usermod -aG kvm "${USER}"
 ```
 - Github https://github.com/sickcodes/Docker-OSX
 
