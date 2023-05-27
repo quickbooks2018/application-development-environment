@@ -159,3 +159,31 @@ defaults write com.apple.Accessibility ReduceMotionEnabled -int 1
 ```bash
 defaults write com.apple.loginwindow DisableScreenLock -bool true
 ```
+
+### MACOS on Windows
+- https://github.com/sickcodes/Docker-OSX#id-like-to-run-docker-osx-on-windows
+- git bash
+```bash
+pwd
+/c/Users/Muhammad Asim
+cd /c/Users/Muhammad Asim
+cat <<EOF > .wslconfig
+[wsl2]
+memory=8GB
+swap=2GB
+processors=2
+nestedVirtualization=true
+EOF
+```
+- After installation, go into Settings and check these 2 boxes:
+```bash
+General -> "Use the WSL2 based engine";
+Resources -> WSL Integration -> "Enable integration with my default WSL distro",
+```
+- Navigate to your WSL2 Installation which is ubuntu
+```bash
+wsl
+sudo apt install -y cpu-checker
+exit
+wsl --shutdown
+```
