@@ -80,26 +80,28 @@ sudo usermod -aG kvm "${USER}"
 docker  run -id \
     --name macos \
     --shm-size=8192m \
-    --device /dev/kvm \
+     --device /dev/kvm \
     -p 50922:10022 \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -e "DISPLAY=${DISPLAY:-:0.0}" \
     -e GENERATE_UNIQUE=true \
     -e MASTER_PLIST_URL='https://raw.githubusercontent.com/sickcodes/osx-serial-generator/master/config-custom.plist' \
-    sickcodes/docker-osx:ventura
+    -e SHORTNAME=ventura \
+    sickcodes/docker-osx:latest
 ```   
 
 - MACOS Ventura Setup without shm-size
 ```macos
 docker  run -id \
     --name macos \
-    --device /dev/kvm \
+     --device /dev/kvm \
     -p 50922:10022 \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -e "DISPLAY=${DISPLAY:-:0.0}" \
     -e GENERATE_UNIQUE=true \
     -e MASTER_PLIST_URL='https://raw.githubusercontent.com/sickcodes/osx-serial-generator/master/config-custom.plist' \
-    sickcodes/docker-osx:ventura
+    -e SHORTNAME=ventura \
+    sickcodes/docker-osx:latest
 ```   
 
 - MACOS add share from a host machine
