@@ -66,6 +66,9 @@ sudo xhost +local:docker
 ### Addtional Permissions
 - If you use sudo dockerd or dockerd is controlled by systemd/systemctl, then you must be in the Docker group. If you are not in the Docker group:
 ```bash
+sudo apt-get update
+sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
+
 sudo usermod -aG docker "${USER}"
 and also add yourself to the kvm and libvirt groups if needed:
 
@@ -77,6 +80,9 @@ sudo usermod -aG kvm "${USER}"
 
 - MACOS Ventura Setup
 ```macos
+sudo apt-get update
+sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
+
 docker  run -id \
     --name macos \
     --shm-size=8192m \
